@@ -1,38 +1,3 @@
-###################################################################### 
-# CSCB58 Summer 2022 Project 
-# University of Toronto, Scarborough 
-# 
-# Student Name: Bryan Wan, Student Number: 1007096642, UTorID: wanbrya1 
-# 
-# Bitmap Display Configuration: 
-# - Unit width in pixels: 8 
-# - Unit height in pixels: 8 
-# - Display width in pixels: 256 
-# - Display height in pixels: 256 
-# - Base Address for Display: 0x10008000 
-# 
-# Basic features that were implemented successfully 
-# - Draw the background of the game
-# - Draw objects of the game: lines, player car, enemy cars, extra life, invisibility
-# - Keyboard input moves car left/right, and increase/decrease speed.
-# - Objects move in both directions
-# - It car collides with enemy cars or roadside, reset the starting position
-# - Total number of lives currently is displayed
-# - Cars move at different speeds depening on difficulty/player speed
-# - Retry Screen after player runs out of lives. If 'y' is pressed, retry. If 'n' is pressed, finish the program.
-# Additional features that were implemented successfully 
-# - Added 2 pickups such as extra life and invisibility/invinsibility
-# - Display the current score at the bottom right. Score is reset when collision occurs.
-# - Current level of difficulty displayed at bottom left
-# - When score is greater than 10, the harder levels starts. Cars move much faster and enemy cars appear in groups of 2.
-#  
-# Link to the video demo 
-# - https://youtu.be/TJyV6dBUfOk
-# 
-# Any additional information that the TA needs to know: 
-# - Write here, if any 
-#  
-###################################################################### 
 .data
 	linestop: .word 0x10006FFC
 	displayAddress: .word 0x10008000
